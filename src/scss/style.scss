@@ -8,6 +8,16 @@
     font-style: #{$style}; }
 
 }
+$mainColor:#839094;
+$greyBackground: #F7F7F7;
+$darkBlueColor: #337AB7;
+$blackColor: #000000;
+$whiteColor: #ffffff;
+
+body._lock{
+  overflow: hidden;
+}
 
 @import "partials/fonts";
 @import "partials/header";
+@import "partials/registrationForm";
