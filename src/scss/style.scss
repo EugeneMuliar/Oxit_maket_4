@@ -10,6 +10,7 @@
 }
 $mainColor:#839094;
 $greyBackground: #F7F7F7;
+$blueBackground: #3498DB;
 $darkBlueColor: #337AB7;
 $blackColor: #000000;
 $whiteColor: #ffffff;
@@ -21,3 +22,5 @@ body._lock{
 @import "partials/fonts";
 @import "partials/header";
 @import "partials/registrationForm";
+@import "partials/siteDevelopment";
+@import "partials/companyResults";

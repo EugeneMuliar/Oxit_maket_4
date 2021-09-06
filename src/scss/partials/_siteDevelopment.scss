@@ -1,0 +1,101 @@
+.siteDevelopment{
+  padding: 80px 0 60px 0;
+  background-color: $greyBackground;
+  .siteDevelopment_container{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    .courseProgram{
+      width: 100%;
+      h2{
+        text-align: center;
+        margin: 20px;
+      }
+      .wrapper{
+        .slider{
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          .slick-list{
+            overflow: hidden;
+            width: 98%;
+            justify-content: center;
+            min-width: 0;
+          }
+          .slick-track{
+            display: flex;
+            //flex-direction: row;
+            //max-width: 1220px;
+            //transform: none;
+          }
+          .slider_item{
+            width: 360px;
+            margin: 20px;
+            text-align: center;
+
+              img{
+                width: 70px;
+                margin: 10px;
+              }
+              h3{
+                font-size: 24px;
+                font-weight: 400;
+                color: $blackColor;
+              }
+              .blue_line{
+                margin: 8px auto;
+                height: 1px;
+                width: 100%;
+                background-color: $darkBlueColor;
+              }
+              .description{
+                color: $mainColor;
+              }
+
+
+          }
+          .slick-dots{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li{
+              list-style: none;
+              margin: 10px;
+            }
+            button{
+              font-size: 0;
+              width: 15px;
+              height: 15px;
+              background-color: #c0c0c0;
+              border-radius: 50%;
+              border-width: 0;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+@media (max-width: 430px) {
+  .courseProgram{
+    h2{
+    font-size: 24px;
+    }
+    .wrapper{
+       .slider{
+         .slider_item{
+           card{
+             h3{
+               font-size: 22px;
+             }
+           }
+
+         }
+       }
+    }
+  }
+}

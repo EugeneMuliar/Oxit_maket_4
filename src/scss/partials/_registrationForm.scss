@@ -7,18 +7,122 @@
         padding: 0 15px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         .about_course{
-            width: 560px;
-            margin: 186px 20px 80px 32px;
+            width: 50%;
+            margin: 186px 25px auto auto;
             
             h2{
                 text-align: center;
+                font-weight: bold ;
+                font-size: 32px;
             }
             p{
                 text-align: center;
-                width: 465px;
+
+                color: $mainColor;
+                margin: 20px auto ;
+                font-size: 16px;
+            }
+        }
+        .Form{
+            width: 50%;
+            margin: 40px auto auto 30px;
+            h3{
+                font-weight: 400;
+                font-size: 24px;
+                font-weight: bold ;
+                margin: 5px;
+                margin-left: 0;
+            }
+            label{
+                font-size: 16px;
+                img{
+                    height: 8px;
+                    margin: 2px;
+
+                }
+                margin: 4px auto;
+
+            }
+            input{
+                width: 100%;
+                height: 46px;
+                padding: 5px 6px;
+                border-color: $mainColor;
+                border-width: 1px;
+                border-radius: 5px;
+
+            }
+            .agreed_button{
+                width: 12px;
+                height: 12px;
+                margin: 3px;
+            }
+            .agreed_label{
+                font-size: 14px;
+            }
+            button{
+                background-color: $darkBlueColor;
+                width: 400px;
+                border: none;
+                font-size: 16px;
+                padding: 18px 50px;
+                color: $whiteColor;
+                border-radius: 30px;
+                margin: 30px auto;
+                display: block;
+            }
+        }
+    }
+}
+@media (max-width:920px) {
+    .registrationForm{
+        .registrationForm_container{
+
+            margin: 20px auto;
+            padding: 0 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .about_course{
+                height: 100%;
+                margin: 0px;
+                width: 95%;
+                p{
+                    width: 95%;
+                    height: auto;
+                    font-size: 14px;
+                }
+            }
+            .Form{
                 margin: auto;
+                width: 385px;
+            }
+        }
+    }
+
+}
+@media (max-width:450px) {
+    .registrationForm{
+        .registrationForm_container{
+            margin: 20px;
+            .about_course{
+                height: auto;
+                width: 95%;
+
+                .p{
+                    width: 95%;
+                    height: 100%;
+                }
+            }
+            .Form{
+                margin: auto;
+                width: 300px;
+                button{
+                    width: 300px;
+                    padding: 14px 35px;
+                }
             }
         }
     }

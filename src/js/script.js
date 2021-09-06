@@ -1,3 +1,7 @@
+
+
+
+
 //Scroll to class object
 const menuLinks = document.querySelectorAll('.menu_link[data-goto]');
 if(menuLinks.length > 0 ){
@@ -27,4 +31,52 @@ if(iconMenu){
         iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
     })
+}
+
+
+//Program course slider
+const program_sliders = document.querySelectorAll(".slider_item");
+const windowInnerWidth = document.documentElement.clientWidth;
+const slider = document.querySelector('.slider')
+
+console.log(windowInnerWidth);
+if(windowInnerWidth < 600){
+    Slider(1);
+}
+else if(windowInnerWidth < 850){
+    Slider(2);
+}else{
+    Slider(3);
+}
+function Slider(param){
+    if(program_sliders.length > param){
+        slider.style = "display: block";
+        $(document).ready(function (){
+            $('.slider').slick({
+                dots: true,
+                arrows: false,
+                slidesToShow: param,
+                slidesToScroll: param,
+                responsive: [
+                    {
+                        breakpoint: 850,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    }]
+            });
+        })
+    }
 }
