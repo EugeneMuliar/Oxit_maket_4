@@ -127,4 +127,28 @@
         }
     }
 }
+@media (max-width:350px) {
+    .registrationForm{
+        .registrationForm_container
+        {
+            padding: 10px;
+            .Form{
+                margin: auto;
+                width: 280px;
+                input{
+                    width: 90%;
+                    height: 40px;
+                    padding: 5px 6px;
+                }
+                button{
+                    width: 270px;
+                    margin: 15px;
+                    margin-left: 0;
+                    font-size: 14px;
+                }
+            }
+
+        }
+    }
+}
 

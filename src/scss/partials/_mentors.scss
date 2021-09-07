@@ -1,0 +1,46 @@
+.mentors {
+  padding: 80px 0 70px 0;
+  background-color: $whiteColor;
+
+  .mentors_container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 15px;
+    align-items: center;
+    font-size: 16px;
+    h3{
+      text-align: center;
+      margin: auto auto 30px auto ;
+      font-size: 40px;
+    }
+    .mentors_slider{
+      .mentor_item{
+        .wrapper{
+          display: flex;
+          .mentor_image{
+            padding: 40px 20px 10px 10px;
+            img{
+              margin: 15px 40px 0 0;
+            }
+          }
+          .description{
+            color: $mainColor;
+            max-width: 55%;
+            margin-left: 40px;
+            .name{
+
+              h4{
+
+                color: #4ba3df;
+                font-weight: bold;
+                margin: 30px auto 30px 0;
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+  }
+}

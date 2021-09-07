@@ -35,28 +35,31 @@ if(iconMenu){
 
 
 //Program course slider
-const program_sliders = document.querySelectorAll(".slider_item");
+const program_sliders = document.querySelectorAll(".slider_program_item");
 const windowInnerWidth = document.documentElement.clientWidth;
 const slider = document.querySelector('.slider')
 
-console.log(windowInnerWidth);
+console.log(program_sliders);
 if(windowInnerWidth < 600){
     Slider(1);
 }
 else if(windowInnerWidth < 850){
     Slider(2);
-}else{
+}else if(program_sliders.length > 3){
     Slider(3);
 }
-function Slider(param){
-    if(program_sliders.length > param){
+else{
+    Slider(3, false)
+}
+function Slider(param, isShowDots=true){
         slider.style = "display: block";
+        console.log(isShowDots)
         $(document).ready(function (){
             $('.slider').slick({
-                dots: true,
                 arrows: false,
                 slidesToShow: param,
                 slidesToScroll: param,
+                dots: isShowDots,
                 responsive: [
                     {
                         breakpoint: 850,
@@ -78,5 +81,18 @@ function Slider(param){
                     }]
             });
         })
-    }
 }
+
+// Feedback slider
+$(document).ready(function () {
+    $('.slider_feedback').slick({
+        fade: true,
+        slidesToShow: 1,
+        arrows: false,
+        dots: true,
+        adaptiveHeight: true,
+        autoplay:true,
+        autoplaySpeed:3000,
+        draggable:true,
+    });
+})

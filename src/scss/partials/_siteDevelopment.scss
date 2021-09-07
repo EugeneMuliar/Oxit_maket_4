@@ -13,7 +13,7 @@
         text-align: center;
         margin: 20px;
       }
-      .wrapper{
+      .wrapper >
         .slider{
           position: relative;
           display: flex;
@@ -79,7 +79,6 @@
     }
 
   }
-}
 @media (max-width: 430px) {
   .courseProgram{
     h2{

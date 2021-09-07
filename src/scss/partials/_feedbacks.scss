@@ -1,0 +1,71 @@
+.feedbacks{
+  padding: 80px 0 70px 0;
+  background-color: $whiteColor;
+  .feedbacks_container{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 15px;
+    align-items: center;
+    h3{
+      text-align: center;
+      font-size: 40px;
+    }
+  .slider_feedback{
+    position: relative;
+    justify-content: center;
+    .slick-list{
+      overflow: hidden;
+    }
+    .slick-track{
+      display: flex;
+    }
+      .slider_feedback_item{
+        margin: 20px auto;
+        max-width: 920px;
+        .left{
+          float: left;
+        }
+        .feedback{
+          text-align: center;
+          padding: 15px;
+          max-width: 830px;
+          margin: auto;
+          color: $mainColor;
+          font-size: 18px;
+        }
+        .right{
+          float: right;
+          margin-top: -30px;
+        }
+        .author{
+          margin: 15px;
+          text-align: center;
+          i{
+            color: $mainColor;
+            font-style: italic;
+          }
+        }
+      }
+
+    }
+    .slick-dots{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li{
+        list-style: none;
+        margin: 10px;
+      }
+      button{
+        font-size: 0;
+        width: 15px;
+        height: 15px;
+        background-color: #c0c0c0;
+        border-radius: 50%;
+        border-width: 0;
+      }
+
+
+  }
+  }
+}
