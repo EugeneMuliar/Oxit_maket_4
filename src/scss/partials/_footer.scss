@@ -1,0 +1,58 @@
+.footer {
+  .contacts {
+    width: 100%;
+    height: 175px;
+    background-color: $blueBackground;
+    .contacts_container{
+      max-width: 1220px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 15px;
+      .contact_item{
+        text-align: center;
+        color: $whiteColor;
+        a{
+          color: $whiteColor;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .company_conditions{
+    height: 100px;
+    .company_conditions_container{
+      max-width: 1220px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 30px 15px;
+      a{
+        margin: 10px;
+        color: $blueBackground;
+      }
+      p{
+        margin: 10px;
+        color: $mainColor;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .footer{
+    .contacts{
+      height:300px;
+      .contacts_container{
+        display: grid;
+        min-width: 290px;
+        max-width: 570px;
+        text-align: center;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-content: space-around;
+        .contact_item{
+          margin: 10px;
+        }
+      }
+    }
+  }
+}

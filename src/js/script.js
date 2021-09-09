@@ -1,7 +1,4 @@
 
-
-
-
 //Scroll to class object
 const menuLinks = document.querySelectorAll('.menu_link[data-goto]');
 if(menuLinks.length > 0 ){
@@ -92,7 +89,16 @@ $(document).ready(function () {
         dots: true,
         adaptiveHeight: true,
         autoplay:true,
-        autoplaySpeed:3000,
+        autoplaySpeed:1000,
+        draggable:true,
+    });
+    $('.mentors_slider').slick({
+        slidesToShow: 1,
+        arrows: false,
+        dots: true,
+        adaptiveHeight: true,
+        autoplay:true,
+        autoplaySpeed:1000,
         draggable:true,
     });
 })
