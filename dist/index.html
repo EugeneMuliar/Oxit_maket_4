@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Oxit</title>
+</head>
+    <body>
+        <header class="header">
+        <div class="header_container">
+            <div class="header_logo">
+                <img src="../img/logo_Oxit.png" alt="Oxit" class="logo-img" title="Oxit">
+            </div>
+            <div class="header_menu menu">
+                <div class="menu_icon">
+                    <span></span>
+                </div>
+                
+                <div class="menu_body">
+                    <ul class="menu_list">
+                        <li><a data-goto=".registrationForm" href="#" class="menu_link">Головна</a></li>
+                        <li><a data-goto=".courseProgram" href="#" class="menu_link">Програма курсу</a></li>
+                        <li><a data-goto=".feedbacks" href="#" class="menu_link">Відгуки про курс</a></li>
+                        <li><a data-goto=".video" href="#" class="menu_link">Відео</a></li>
+                        <li><a data-goto=".mentors" href="#" class="menu_link">Ментори</a></li>
+                        <li><a href="#" class="menu_link special">Подати заявку</a></li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+</header>
+        <div class="registrationForm">
+    <div class="registrationForm_container">
+        <div class="about_course">
+            <h2>
+                Курси програмування у Луцьку
+            </h2>
+            <p>
+                Сфера ІТ розвивається максимально швидко. Зараз дуже популярно здобувати освіту, що повязана з ІТ. Існує лише одна проблема - брак дійсно кваліфікованих спеціалістів в Україні. Під час навчання ми отримуємо мало практики і "живих", реальних кейсів. ІТ школа ОхІТ створила таку методику навчання, при якій за короткий час ви отримаєте необхідні знання, щоб стати ІТ спеціалістом. Чекаємо вас на нших курсах з програмування в Луцьку. Старт наступного курсу 3 серпня.
+            </p>
+        </div>
+        <div class="Form">
+            <h3>Зареєструватися на курси</h3>
+            <form name="registration">
+                <label for="name">Ім'я<img src="../img/icons/required.png"> </label><br>
+                <input type="text" size="40" id="name" placeholder="Ім'я" required><br>
+                <label for="surname">Прізвище<img src="../img/icons/required.png"></label><br>
+                <input type="text" size="40" id="surname" placeholder="Прізвище" required><br>
+                <label for="spec">Мене більше цікавить<img src="../img/icons/required.png"></label><br>
+                <input type="text" size="40" id="spec" placeholder="developer or QA" required><br>
+                <label for="phone">Номер телефону<img src="../img/icons/required.png"></label><br>
+                <input type="tel" id="phone" placeholder="Номер телефону:+38 ХХХ ХХ ХХ ХХХ" required><br>
+                <label for="email">Email<img src="../img/icons/required.png"></label><br>
+                <input type="email" id="email" placeholder="Email" required><br>
+                <input type="checkbox" id="agreed" class="agreed_button"><label for="agreed" class="agreed_label">Я погоджуюся із <a>Політикою Кофіденційності</a><img src="../img/icons/required.png"></label><br>
+
+                    <button>ЗАРЕЄСТРУВАТИСЯ ЗАРАЗ</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+        <div class="siteDevelopment">
+    <div class="siteDevelopment_container">
+        <div class="courseProgram">
+            <h2>Курс «Розробка сайтів»</h2>
+            <div class="wrapper">
+                <div class="slider">
+                    <div class="slider_item slider_program_item">
+
+                            <img src="img/icons/course-icon-1.png">
+                            <h3>Розробка сайтів на WordPress</h3>
+                            <div class="blue_line"></div>
+                            <div class="description">Курс складається з коротких навчальних відео, на яких ти пізнаєш основи WordPress, навчишся створювати сайти різної складності: від блогів до інтернет-магазинів. Всі знання закріпиш за ддопомогою тестових завдань.</div>
+
+                    </div>
+                    <div class="slider_item slider_program_item">
+
+                            <img src="img/icons/course-icon-2.png">
+                            <h3>Розробка сайтів на Drupal 8</h3>
+                            <div class="blue_line"></div>
+                            <div class="description">Для створення чудових сайтів на Drupal 8, цеглинка за цеглинкою, ти пізнаєш секрети основних та додаткових Drupal-модулів(Views, Pules, Panels, Devel, Paragraph та багатьох інших).</div>
+
+                    </div>
+                    <div class="slider_item slider_program_item">
+
+                            <img src="img/icons/course-icon-3.png">
+                            <h3>Ознайомлення з тестуванням</h3>
+                            <div class="blue_line"></div>
+                            <div class="description">Ти дізнаєшся про забезпечення якості в контексті різних моделей розробки ПЗ. Також QA-спеціаліст розкаже про види тестування (функціональне, регресивне, системне, тестування швидкодії тощо).</div>
+
+                    </div>
+                    <div class="slider_item slider_program_item">
+
+                            <img src="img/icons/course-icon-3.png">
+                            <h3>Ознайомлення з тестуванням</h3>
+                            <div class="blue_line"></div>
+                            <div class="description">Ти дізнаєшся про забезпечення якості в контексті різних моделей розробки ПЗ. Також QA-спеціаліст розкаже про види тестування (функціональне, регресивне, системне, тестування швидкодії тощо).</div>
+
+                    </div>
+<!--                    <div class="slider_item slider_program_item">-->
+
+<!--                        <img src="img/icons/course-icon-3.png">-->
+<!--                        <h3>Ознайомлення з тестуванням</h3>-->
+<!--                        <div class="blue_line"></div>-->
+<!--                        <div class="description">Ти дізнаєшся про забезпечення якості в контексті різних моделей розробки ПЗ. Також QA-спеціаліст розкаже про види тестування (функціональне, регресивне, системне, тестування швидкодії тощо).</div>-->
+
+<!--                    </div>-->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="company_results">
+    <div class="company_results_container">
+        <div class="item">
+            <img src="../img/icons/statistic-icon-1.png">
+            <div class="number">25</div>
+            <div class="result">курсів організовано</div>
+        </div>
+        <div class="item">
+            <img src="../img/icons/statistic-icon-2.png">
+            <div class="number">836</div>
+            <div class="result">годин занять проведено</div>
+        </div>
+        <div class="item">
+            <img src="../img/icons/statistic-icon-3.png">
+            <div class="number">500</div>
+            <div class="result">студентів начено</div>
+        </div>
+        <div class="item">
+            <img src="../img/icons/statistic-icon-2.png">
+            <div class="number">120</div>
+            <div class="result">випускників курсів працевлаштовано</div>
+        </div>
+    </div>
+</div>
+        <div class="feedbacks">
+    <div class="feedbacks_container">
+        <h3>Що кажуть студенти наших курсів:<br></h3>
+        <div class="slider_feedback">
+            <div class="slider_feedback_item">
+                <img src="./img/icons/left_quote.png" class="left">
+                <div class="feedback">Під час проходження курсів Drupal у школі ОхIT я навчився створювати не досить складні сайти та знайшов справу, якою хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder.<br>Зараз я можу сказати, що Drupal та ОхIT повністю змінили моє життя.</div>
+                <img src="./img/icons/right_quote.png" class="right">
+                <div class="author">
+                    <b>Коля</b><br><i>Drupal-девелопер</i>
+                </div>
+            </div>
+            <div class="slider_feedback_item">
+                <img src="./img/icons/left_quote.png" class="left">
+                <div class="feedback">Під час проходження курсів Drupal у школі ОхIT я навчився створювати не досить складні сайти та знайшов справу, якою хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder.<br>Зараз я можу сказати, що Drupal та ОхIT повністю змінили моє життя.</div>
+                <img src="./img/icons/right_quote.png" class="right">
+                <div class="author">
+                    <b>Коля</b><br><i>Drupal-девелопер</i>
+                </div>
+            </div>
+            <div class="slider_feedback_item">
+                <img src="./img/icons/left_quote.png" class="left">
+                <div class="feedback">Під час проходження курсів Drupal у школі ОхIT я навчився створювати не досить складні сайти та знайшов справу, якою хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder.<br>Зараз я можу сказати, що Drupal та ОхIT повністю змінили моє життя.</div>
+                <img src="./img/icons/right_quote.png" class="right">
+                <div class="author">
+                    <b>Коля</b><br><i>Drupal-девелопер</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="video">
+    <div class="video_container">
+        <h3>Відео</h3>
+        <div class="description">
+            <p>Lorem ipsum - це текст-"риба", що використовується в друкарстві та дизайн. Lorem Ipsum е фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтаву гранку та склав на ній підбірку зразків шрифтів “Риба" не тільки успішно пережила пять століть, але й прижилася в електронному верстуванні залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки Виданно зразків шрифтів Letraset, які містили уривки Lorem Ipsum, вдруге нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.</p>
+        </div>
+        <div class="youtube_video_container">
+            <iframe class="youtube_video" src="https://www.youtube.com/embed/JLHvS0qR5Lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+        <div class="mentors">
+    <div class="mentors_container">
+        <h3>Наші ментори</h3>
+        <div class="mentors_slider">
+            <div class="mentor_item">
+                <div class="wrapper">
+                    <div class="mentor_image">
+                        <img src="./img/viktor.png" alt="Viktor">
+                    </div>
+
+                    <div class="description">
+                        <div class="name">
+                            <h4>Віктор</h4>
+                        </div>
+                        <p>Майбутнім управлінцям неабияк пощастило — адже з ними ділитиметься досвідом управлінець із величезним досвідом! Сам засновник I CEO компаніі InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту</p>
+                        <p>Віктору є про що розповісти Він знає все про створення та керування великими компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він ніколи не скаже, що знає все — саморозвиток для нього не закінчується жодної хвилини.</p>
+                        <p>На книжкови Втора полицях — сотні прочитаних книг про управління не тільки А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до хнього здійснення Тільки недавно він передавав усім привіт з Ельбрусу — найвищої точки Европи</p>
+                        <p>Буде нестримна, мов гірська лавина, енергія помножена на мудрість і досвід Іви таке пропустите? Записуйтесь уже зараз!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mentor_item">
+                <div class="wrapper">
+                    <div class="mentor_image">
+                        <img src="./img/mark.png" alt="Viktor">
+                    </div>
+
+                    <div class="description">
+                        <div class="name">
+                            <h4>Віктор</h4>
+                        </div>
+                        <p>Майбутнім управлінцям неабияк пощастило — адже з ними ділитиметься досвідом управлінець із величезним досвідом! Сам засновник I CEO компаніі InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту</p>
+                        <p>Віктору є про що розповісти Він знає все про створення та керування великими компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він ніколи не скаже, що знає все — саморозвиток для нього не закінчується жодної хвилини.</p>
+                        <p>На книжкови Втора полицях — сотні прочитаних книг про управління не тільки А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до хнього здійснення Тільки недавно він передавав усім привіт з Ельбрусу — найвищої точки Европи</p>
+                        <p>Буде нестримна, мов гірська лавина, енергія помножена на мудрість і досвід Іви таке пропустите? Записуйтесь уже зараз!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mentor_item">
+                <div class="wrapper">
+                    <div class="mentor_image">
+                        <img src="./img/vova.png" alt="Viktor">
+                    </div>
+
+                    <div class="description">
+                        <div class="name">
+                            <h4>Віктор</h4>
+                        </div>
+                        <p>Майбутнім управлінцям неабияк пощастило — адже з ними ділитиметься досвідом управлінець із величезним досвідом! Сам засновник I CEO компаніі InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту</p>
+                        <p>Віктору є про що розповісти Він знає все про створення та керування великими компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він ніколи не скаже, що знає все — саморозвиток для нього не закінчується жодної хвилини.</p>
+                        <p>На книжкови Втора полицях — сотні прочитаних книг про управління не тільки А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до хнього здійснення Тільки недавно він передавав усім привіт з Ельбрусу — найвищої точки Европи</p>
+                        <p>Буде нестримна, мов гірська лавина, енергія помножена на мудрість і досвід Іви таке пропустите? Записуйтесь уже зараз!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="map" width="100%">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2526.273592011431!2d25.31588763834532!3d50.714863258991954!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeba249b67a64b0a9!2sInternetDevels!5e0!3m2!1suk!2sua!4v1631173145045!5m2!1suk!2sua" class="google_map" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+        <div class="footer">
+    <div class="contacts">
+        <div class="contacts_container">
+            <div class="contact_item">
+                <img src="./img/icons/phone.png">
+                <div class="title">Телефон</div>
+                <a href="tel:+380673321755">+380673321755</a>
+            </div>
+            <div class="contact_item">
+                <img src="./img/icons/mail.png">
+                <div class="title">E-mail</div>
+                <a href="mailto:>office@it.volyn.ua">office@it.volyn.ua</a>
+            </div>
+            <div class="contact_item">
+                <img src="./img/icons/address.png">
+                <div class="title">Адреса</div>
+                <p>вул. Боженка 34г, Луцьк</p>
+            </div>
+            <div class="contact_item">
+                <img src="./img/icons/facebook.png">
+                <div class="title">Facebook</div>
+                <a href="https://www.facebook.com/oxitschool/">facebook.com/oxitschool</a>
+            </div>
+        </div>
+    </div>
+    <div class="company_conditions">
+        <div class="company_conditions_container">
+            <a href="#">&copy;&nbsp;Copyright 2018-2020 Internet Devels</a>
+            <p>Умови політики конфіденційності</p>
+        </div>
+    </div>
+</div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/script.js" ></script>
+    </body>
+</html>
